@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Oxygen:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    
+   
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar-brand{
+    font-size:25px;
+    font-family: 'Lora', serif !important;
+    font-weight: 500;
+   
+}
+
+.nav-item .nav-link{
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif !important;
+    font-weight: 600 !important;
+   
+
+}
+.bg-img{
+    background-image: url("../assets/main/banner.jpg");
+    width:100%;
+    height:500px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  .heading{
+      font-size: 50px;
+      font-family: 'Lora', serif !important;
+      
+  }
+  .sub-head{
+      font-size:17px;
+      font-family: 'Oxygen', sans-serif !important;
+      color:gray;
+  }
+  .btn{
+      width:200px;
+      height:40px;
+      font-size:15px;
+      color:#fff;
+      background-color:#c2581b;
+  }
+  .btn:hover{
+      background-color:  #dd783f;
+      color: #fff;
+  }
+  .category  .nav-link{
+      font-size: 14px;
+      font-family: 'Lora', serif !important;
+      color:#333;
+  }
+ 
+  
+  .w-col{
+      padding-left: 8px;
+      padding-right: 8px;
+      float: left;
+      margin-top: 10px;
+      min-height: 1px;
+      position:relative;
+     
+  }
+  .w-col-2{
+      width:15%;
+  }
+  .category  .nav-link:hover{
+      background-color:#c0b7b7;
+      color:#fff;
+      margin:10px;
+      
+  }
+  .category-title{
+      margin-top: 60px;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Oxygen', sans-serif !important;
+      line-height: 27px;
+    
+  }
+  .divider{
+      display: block;
+      width:20%;
+      height:1px;
+      margin:16px auto;
+      background-color: #dedede;
+  }
+  .card1{
+    background-image: url('../assets/main/card1.jpg');
+      width:100%;
+      height:300px;
+      object-position:center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .card1 .btn{
+      background-color: #a872b7;
+      color:#fff;
+      width:130px;
+      height:30px;
+      font-size: 12px;
+      font-family: 'Oxygen', sans-serif !important;
+      border-radius: 2px;
+      border-color: none;
+ }
+  .card2{
+    background-image: url('../assets/main/card2.jpg');
+      width:100%;
+      height:300px;
+      object-position:center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .card2 .btn{
+    background-color:#dd783f;
+    color:#fff;
+    width:130px;
+    height:30px;
+    font-size: 12px;
+    font-family: 'Oxygen', sans-serif !important;
+    border-radius: 2px;
+    border-color: none;
+}
+.card1  .card-title1{
+    color:#fff !important;
+}
+.contact-section{
+    background-image: url('../assets/main/5e4b1929fccc7f0ae6de82d7_footer-bg.jpg');
+    width:100%;
+    height:500px;
+    object-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:1;
+}
+.contact-section .category-title{
+    font-weight: 600;
+    font-size:30px;
+}
+.contact-section  .btn{
+    background-color: grey;
+    color:#fff;
+}
+.logo-footer h1{
+    font-family: 'Lora', serif !important;
+    font-size: 30px;
+}
+.footer-items{
+    justify-content: space-between;
+    display:flex;
+    list-style-type: none;
+}
+.footer-items-list a{
+    color:#fff;
+    text-decoration: none;
+    justify-content: space-between;
+    font-family: 'Oxygen', sans-serif !important;
+}
+ 
+  @media screen and (max-width: 768px)
+  {
+    .heading{
+        flex-direction: column;
+    }
+    .heading-btn{
+      align-items: center;  
+    }
+    .category-wrapper{
+        display: inline-block;
+        width:33%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .w-col{
+        left: auto;
+        right: auto;
+    }
+    .divider{
+        width:50%;
+    }
+    .form-control{
+        width:100%;
+    }
+    .contact-section .btn{
+        width:80px;
+    }
+    .footer-links .footer-items {
+        flex-direction: column;
+    }
+  }
+      
+  
